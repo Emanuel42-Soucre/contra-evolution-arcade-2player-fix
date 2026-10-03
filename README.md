@@ -58,7 +58,7 @@ Disparo = 3                                    // ID físico del botón soldado 
 Este proyecto fue diseñado con arquitectura elástica portable, lo que significa que **se puede combinar perfectamente** con soluciones de escalado de video para lograr la experiencia arcade definitiva en monitores modernos de 1080p, 2K o 4K sin pérdida de FPS.
 
 Si deseas forzar el juego a pantalla completa sin bordes y estirar la imagen a 16:9, puedes acoplar este fix de controles junto con el wrapper de Direct3D 9, utilizando cualquiera de estas dos opciones:
-* El proyecto original de ThirteenAG: [ThirteenAG/d3d9-wrapper](https://github.com)
+* El proyecto original de ThirteenAG: [ThirteenAG/d3d9-wrapper](https://github.com/ThirteenAG/d3d9-wrapper)
 * Mi compilación manual optimizada: [Emanuel42-Soucre/d3d9-wrapper-custom-resolution](https://github.com)
 
 ### 🚀 Cómo combinarlos en tu carpeta (Instrucciones de Mueble Arcade):
