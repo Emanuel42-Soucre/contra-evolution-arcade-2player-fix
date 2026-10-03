@@ -37,19 +37,19 @@ La `dinput8.dll` incorpora un **Escudo de Contingencia de Fábrica**. Esto signi
 ## 🔧 Instrucciones de Instalación y Calibración
 1. Descarga el paquete compilado desde la sección de **Releases**.
 2. Copia los archivos `Config_Joystick.exe` y `dinput8.dll` y pégalos directamente en la carpeta raíz del juego (donde está el archivo ejecutable principal `.exe`).
-3. **Mapeo Personalizado (Opcional):** Ejecuta `Config_Joystick.exe`. Haz clic en las casillas para registrar las palancas y botones de tu tablero arcade. Al finalizar, haz clic en el botón gigante **"ACEPTAR Y GUARDAR CONFIGURACION"**. La herramienta creará el archivo plano de datos `Config_Joystick.ini` y se cerrará sola.
+3. **Mapeo Personalizado (Opcional):** Ejecuta `Config_Joystick.exe`. Haz clic en las casillas para registrar las palancas y botones de tu tablero arcade. Al finalizar, haz clic en el botón gigante **"ACEPTAR Y GUARDAR CONFIGURACION"**. La herramienta creará el archivo plano de datos `dinput8.ini` de forma automática y la suite se cerrará sola.
 4. Inicia el juego. El parche inyectará los controles al vuelo de forma comercial impecable.
 
 ---
 
-## 📂 Formato de Datos Generado (`Config_Joystick.ini`)
-El configurador guardará tus parámetros dividiendo de forma descriptiva el hardware para que el mantenimiento del mueble sea sumamente directo:
+## 📂 Formato de Datos Generado (`dinput8.ini`)
+El configurador guardará tus parámetros de forma nativa en texto plano, dividiendo el hardware para que el mantenimiento del mueble sea sumamente directo:
 
 ```ini
 [Joystick1_Player1]
-Teclado_Emulado_VK = 87                        // Código de la tecla de Windows (ej: W)
-Joystick_Modo_Input = 1                        // 1 = Eje Analógico | 2 = POV Hat | 3 = Botón físico
-Joystick_Boton_ID = 1                          // ID real soldado en la placa USB
+Modo_Arriba = 1                                // 1 = Eje Analógico | 2 = POV Hat | 3 = Botón físico
+Valor_Arriba = 1                               // ID real del botón o eje en la controladora USB
+Disparo = 3                                    // ID físico del botón soldado en la placa
 ```
 
 ---
@@ -66,4 +66,4 @@ Si deseas forzar el juego a pantalla completa sin bordes y estirar la imagen a 1
 2. Descarga el wrapper de video y copia los archivos **`d3d9.dll`** y **`d3d9.ini`** dentro de la misma carpeta raíz del juego.
 3. Modifica la resolución deseada en el fichero `d3d9.ini` (ejemplo: `Width = 1920`, `Height = 1080`).
 4. **🔥 REGLA DE ORO DE VIDEO (¡IMPORTANTE!):** Para jugar en modo panorámico real (16:9), debes iniciar el juego ejecutando estrictamente el archivo **`AMContra.exe`** que se encuentra dentro de la subcarpeta **`Windowed Mode`** (se recomienda preferentemente utilizar la versión de máxima calidad de **`1600x1200`**). Esto le entrega al inyector D3D9 una imagen limpia de alta densidad para estirarla de forma simétrica a toda tu pantalla.
-5. **📺 NOTA PARA ENTUSIASTAS RETRO (4:3 Puro):** No utilices el ejecutable de la carpeta *Windowed Mode* si planeas usar el ejecutable original de la carpeta *Full Screen Mode*. El juego se forzará de forma rígida a la relación de aspecto antigua de 4:3. En ese caso específico, **NO debes copiar los archivos `d3d9.dll` y `d3d9.ini`** en el directorio, ya que la `dinput8.dll` universal de Emanuel42 se encargará de gestionar las palancas de forma fluida e independiente por sí sola en segundo plano.
+5. **📺 NOTA PARA ENTUSIASTAS RETRO (4:3 Puro):** No utilices el ejecutable de la carpeta *Windowed Mode* si planeas usar el ejecutable original de la carpeta *Full Screen Mode*. El juego se forzará de forma rígida a la relación de aspecto antigua de 4:3. En ese caso específico, **NO debes copiar los archivos `d3d9.dll` y `d3d9.ini`** en el directorio, ya que la `dinput8.dll` unificada de Emanuel42 se encargará de gestionar las palancas de forma fluida e independiente por sí sola en segundo plano.
