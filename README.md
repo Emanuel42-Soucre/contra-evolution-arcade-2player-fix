@@ -2,7 +2,7 @@
 Configurador Win32 y proxy dinput8.dll para habilitar soporte síncrono de 2 jugadores en Contra Evolution, eliminar micro-tirones (stuttering) y liberar el teclado compartido.
 
 # Contra Evolution - Arcade 2-Player & Anti-Stuttering Fix
-Desarrollo basado en [geeky/dinput8wrapper](https://github.com), mejorado y compilado por **Emanuel42**  
+Para este esarrollo se uso la base de [geeky/dinput8wrapper](https://github.com), se mejoro y compilado por **Emanuel42** para Contra Evolution 
 Suite portable nativa en C++ para cabinas arcade y muebles recreativos.
 
 ---
