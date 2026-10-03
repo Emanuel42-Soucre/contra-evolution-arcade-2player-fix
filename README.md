@@ -59,7 +59,7 @@ Este proyecto fue diseñado con arquitectura elástica portable, lo que signific
 
 Si deseas forzar el juego a pantalla completa sin bordes y estirar la imagen a 16:9, puedes acoplar este fix de controles junto con el wrapper de Direct3D 9, utilizando cualquiera de estas dos opciones:
 
-* El proyecto original de ThirteenAG: [ThirteenAG/d3d9-wrapper](https://github.com/ThirteenAG/d3d9-wrapper)
+* El proyecto original de ThirteenAG: [ThirteenAG/d3d9-wrapper](https://github.com/ThirteenAG/d3d9-wrapper)  (LEER NOTA AL FINAL)
   
 * Opcional: Mi compilación manual optimizada: [Emanuel42-Soucre/d3d9-wrapper-custom-resolution](https://github.com/Emanuel42-Soucre/d3d9-wrapper-custom-resolution)
 
